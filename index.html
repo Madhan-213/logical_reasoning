@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Logical Reasoning & Flow of Control – Simple Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link external CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <div class="nav">
+      <div class="nav-title">
+        <span class="logo-dot">◆</span>
+        LOGIC LAB
+      </div>
+      <div class="nav-links">
+        <a href="#logical">Logical Reasoning</a>
+        <a href="#flow">Flow of Control</a>
+        <a href="#selection">Selection</a>
+        <a href="#loops">Loops</a>
+        <a href="#branching">Branching</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div>
+        <div class="section-label">Programming</div>
+        <h1 class="hero-main-title">
+          Logical Reasoning &<br />
+          <span>Flow of Control</span> in Programs
+        </h1>
+       
+      </div>
+
+      <!-- Visual card -->
+      <div class="hero-card">
+        <div class="hero-card-title">
+          <h2>How a Program Works 🧠</h2>
+          <span class="hero-chip">Think → Write steps → Code</span>
+        </div>
+        <div class="hero-flow">
+          <div class="flow-row">
+            <div class="flow-step">
+              <div class="flow-step-label">1 · Logical Reasoning</div>
+              <div class="flow-step-main">
+                Understand the problem, inputs, outputs, and rules.
+              </div>
+            </div>
+          </div>
+          <div class="flow-row">
+            <span class="arrow">⬇</span>
+          </div>
+          <div class="flow-row">
+            <div class="flow-step">
+              <div class="flow-step-label">2 · Flow of Control</div>
+              <div class="flow-step-main">
+                Use <code>if</code>, <code>loops</code>, and <code>break</code> to 
+                convert your thinking into program steps.
+              </div>
+            </div>
+          </div>
+          <div class="flow-row">
+            <span class="arrow">⬇</span>
+          </div>
+          <div class="flow-row">
+            <div class="flow-step">
+              <div class="flow-step-label">3 · Output</div>
+              <div class="flow-step-main">
+                Computer follows your steps and prints the result.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mini-tip">
+          💡 If you are clear in <strong>logic</strong>, coding becomes 50% easier immediately.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: LOGICAL REASONING -->
+    <section id="logical" class="card">
+      <div class="section-label"></div>
+      <div class="card-header">
+        <div class="card-icon">🧠</div>
+        <div>
+          <div class="card-title">Logical Reasoning in Programming</div>
+          <div class="card-sub">
+            Meaning and one simple example.
+          </div>
+        </div>
+      </div>
+
+      <p>
+        <strong>Logical Reasoning in Programming means using clear thinking and step-by-step decision making to solve problems and write correct programs.</strong>
+        Why Logical Reasoning is Important in Programming?
+      </p>
+
+      <ol>
+        <li>Understand what the problem is asking.</li>
+        <li>Find what input is needed and what output is required.</li>
+        <li>Decide the conditions (for example: greater than, equal, pass/fail).</li>
+        <li>Write the steps in simple language (pseudocode).</li>
+      </ol>
+
+      <div class="tip-box green">
+        <span class="tip-label"> Good logical reasoning helps you:</span><br />
+      
+✔ Understand a problem<br>
+✔ Break it into smaller steps<br>
+
+✔ Write error-free programs
+      </div>
+
+      <h3>Example – Even or Odd Number</h3>
+      <p><strong>Problem:</strong> Read a number and say if it is even or odd.</p>
+      <p><strong>Logical Meaning:</strong> A number is even if it is divisible by 2 without remainder.</p>
+
+      <p><strong>Pseudocode:</strong></p>
+      <pre><code>READ n
+IF n % 2 == 0
+    PRINT "Even"
+ELSE
+    PRINT "Odd"</code></pre>
+
+      <p><strong>Python Program:</strong></p>
+      <pre><code>n = int(input("Enter a number: "))
+
+if n % 2 == 0:
+    print("Even")
+else:
+    print("Odd")</code></pre>
+
+      <p><strong>Sample Output (for input 4):</strong></p>
+      <pre><code>Enter a number: 4
+Even</code></pre>
+    </section>
+
+    <!-- SECTION 2: FLOW OF CONTROL -->
+    <section id="flow" class="card">
+      <div class="section-label"></div>
+      <div class="card-header">
+        <div class="card-icon">🔀</div>
+        <div>
+          <div class="card-title">Flow of Control in Programs</div>
+          <div class="card-sub">
+            
+          </div>
+        </div>
+      </div>
+
+      <p>
+        <strong>Meaning:</strong> Flow of control means 
+        <strong>the order in which the computer executes the statements</strong> in a program.
+      </p>
+
+      <p>There are three main ways control flows in a program:</p>
+      <ul>
+        <li><strong>Sequential:</strong> one line after another.</li>
+        <li><strong>Selection (Decision):</strong> choose one path based on condition.</li>
+        <li><strong>Iteration (Looping):</strong> repeat something again and again.</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="tip-label">Remember</span><br />
+        Logical reasoning is <strong>how you plan</strong>.  
+        Flow of control is <strong>how the computer follows your plan</strong>.
+      </div>
+    </section>
+
+    <!-- SECTION 3: SELECTION -->
+    <section id="selection" class="card">
+      <div class="section-label"></div>
+      <div class="card-header">
+        <div class="card-icon">✅</div>
+        <div>
+          <div class="card-title">Selection (Decision Making)</div>
+          <div class="card-sub">
+            
+          </div>
+        </div>
+      </div>
+
+      <p>
+        <strong>Meaning:</strong> Selection (or decision) statements are used when 
+        the program has to <strong>choose between two or more paths</strong> based on a condition.
+      </p>
+
+      <p>Main statements:</p>
+      <ul>
+        <li><code>if</code></li>
+        <li><code>if–else</code></li>
+        <li><code>else–if ladder</code></li>
+        <li><code>switch</code> (in some languages)</li>
+      </ul>
+
+      <h3>Example – Pass or Fail</h3>
+      <p><strong>Problem:</strong> Read marks. If marks ≥ 35, print "Pass", otherwise "Fail".</p>
+
+      <p><strong>Python Program:</strong></p>
+      <pre><code>marks = int(input("Enter marks: "))
+
+if marks >= 35:
+    print("Pass")
+else:
+    print("Fail")</code></pre>
+
+      <p><strong>Sample Output (for input 40):</strong></p>
+      <pre><code>Enter marks: 40
+Pass</code></pre>
+    </section>
+
+    <!-- SECTION 4: LOOPS -->
+    <section id="loops" class="card">
+      <div class="section-label"></div>
+      <div class="card-header">
+        <div class="card-icon">🔁</div>
+        <div>
+          <div class="card-title">Iteration (Loops)</div>
+          <div class="card-sub">
+           
+          </div>
+        </div>
+      </div>
+
+      <p>
+        <strong>Meaning:</strong> Iteration or looping means 
+        <strong>repeating a set of statements</strong> multiple times.
+        Instead of writing the same code many times, we use a loop.
+      </p>
+
+      <p>Common loops:</p>
+      <ul>
+        <li><strong>for loop</strong> – when we know how many times to repeat.</li>
+        <li><strong>while loop</strong> – when we repeat until a condition becomes false.</li>
+        <li><strong>do–while loop</strong> – (available in some languages) similar to while, but runs at least once.</li>
+      </ul>
+
+      <h3>Example – Print Numbers 1 to 5 (for loop)</h3>
+
+      <p><strong>Python Program:</strong></p>
+      <pre><code>for i in range(1, 6):
+    print(i)</code></pre>
+
+      <p><strong>Sample Output:</strong></p>
+      <pre><code>1
+2
+3
+4
+5</code></pre>
+    </section>
+
+    <!-- SECTION 5: BRANCHING -->
+    <section id="branching" class="card">
+      <div class="section-label"></div>
+      <div class="card-header">
+        <div class="card-icon">🚦</div>
+        <div>
+          <div class="card-title">Branching Statements</div>
+          <div class="card-sub">
+            Meaning and one small example.
+          </div>
+        </div>
+      </div>
+
+      <p>
+        <strong>Meaning:</strong> Branching statements are used to 
+        <strong>change the normal flow</strong> inside loops or functions. 
+        They can stop a loop early, skip one step, or exit from a function.
+      </p>
+
+      <p>Common branching statements:</p>
+      <ul>
+        <li><code>break</code> – exit from loop or switch.</li>
+        <li><code>continue</code> – skip current loop iteration.</li>
+        <li><code>return</code> – exit from function.</li>
+      </ul>
+
+      <h3>Example – break in a for Loop</h3>
+      <p>Print numbers from 1 to 5, but stop when number becomes 3.</p>
+
+      <p><strong>Python Program:</strong></p>
+      <pre><code>for i in range(1, 6):
+    if i == 3:
+        break   # stop the loop
+    print(i)</code></pre>
+
+      <p><strong>Sample Output:</strong></p>
+      <pre><code>1
+2</code></pre>
+    </section>
+
+    <footer>
+      Logical Reasoning & Flow of Control  
+    </footer>
+  </div>
+</body>
+</html>
